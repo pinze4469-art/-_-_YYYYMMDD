@@ -1,0 +1,295 @@
+{
+  "sessions": [
+    {
+      "sessionId": "demo-free-session",
+      "createdAt": "2026-07-01T14:52:52.402Z",
+      "updatedAt": "2026-07-01T14:52:52.402Z",
+      "version": 4,
+      "subscriptionStatus": "inactive",
+      "answers": {
+        "gender": {
+          "gender": "female"
+        },
+        "goals": {
+          "goals": [
+            "lose_weight",
+            "increase_energy"
+          ]
+        },
+        "body": {
+          "age": 31,
+          "heightCm": 168,
+          "weightKg": 72,
+          "targetWeightKg": 64
+        },
+        "activity": {
+          "activityLevel": "moderate"
+        }
+      },
+      "assessment": {
+        "bmi": 25.5,
+        "bmiCategory": "overweight",
+        "dailyCalories": 1804,
+        "targetPredictionDate": "2026-10-21",
+        "weeksToTarget": 16,
+        "goalDirection": "loss",
+        "summary": "A steady calorie deficit is recommended with moderate activity.",
+        "predictionCurve": [
+          {
+            "week": 0,
+            "weightKg": 72,
+            "bmi": 25.5
+          },
+          {
+            "week": 1,
+            "weightKg": 71.5,
+            "bmi": 25.3
+          },
+          {
+            "week": 2,
+            "weightKg": 71,
+            "bmi": 25.2
+          },
+          {
+            "week": 3,
+            "weightKg": 70.5,
+            "bmi": 25
+          },
+          {
+            "week": 4,
+            "weightKg": 70,
+            "bmi": 24.8
+          },
+          {
+            "week": 5,
+            "weightKg": 69.5,
+            "bmi": 24.6
+          },
+          {
+            "week": 6,
+            "weightKg": 69,
+            "bmi": 24.4
+          },
+          {
+            "week": 7,
+            "weightKg": 68.5,
+            "bmi": 24.3
+          },
+          {
+            "week": 8,
+            "weightKg": 68,
+            "bmi": 24.1
+          },
+          {
+            "week": 9,
+            "weightKg": 67.5,
+            "bmi": 23.9
+          },
+          {
+            "week": 10,
+            "weightKg": 67,
+            "bmi": 23.7
+          },
+          {
+            "week": 11,
+            "weightKg": 66.5,
+            "bmi": 23.6
+          },
+          {
+            "week": 12,
+            "weightKg": 66,
+            "bmi": 23.4
+          },
+          {
+            "week": 13,
+            "weightKg": 65.5,
+            "bmi": 23.2
+          },
+          {
+            "week": 14,
+            "weightKg": 65,
+            "bmi": 23
+          },
+          {
+            "week": 15,
+            "weightKg": 64.5,
+            "bmi": 22.9
+          },
+          {
+            "week": 16,
+            "weightKg": 64,
+            "bmi": 22.7
+          }
+        ],
+        "macroPlan": {
+          "proteinGrams": 108,
+          "fatGrams": 56,
+          "carbGrams": 217
+        },
+        "riskNotes": []
+      },
+      "subscription": null,
+      "paymentEvents": [],
+      "completedAt": "2026-07-01T14:52:52.408Z"
+    },
+    {
+      "sessionId": "demo-paid-session",
+      "createdAt": "2026-07-01T14:52:52.408Z",
+      "updatedAt": "2026-07-01T14:52:52.408Z",
+      "version": 4,
+      "subscriptionStatus": "active",
+      "answers": {
+        "gender": {
+          "gender": "female"
+        },
+        "goals": {
+          "goals": [
+            "lose_weight",
+            "increase_energy"
+          ]
+        },
+        "body": {
+          "age": 31,
+          "heightCm": 168,
+          "weightKg": 72,
+          "targetWeightKg": 64
+        },
+        "activity": {
+          "activityLevel": "moderate"
+        }
+      },
+      "assessment": {
+        "bmi": 25.5,
+        "bmiCategory": "overweight",
+        "dailyCalories": 1804,
+        "targetPredictionDate": "2026-10-21",
+        "weeksToTarget": 16,
+        "goalDirection": "loss",
+        "summary": "A steady calorie deficit is recommended with moderate activity.",
+        "predictionCurve": [
+          {
+            "week": 0,
+            "weightKg": 72,
+            "bmi": 25.5
+          },
+          {
+            "week": 1,
+            "weightKg": 71.5,
+            "bmi": 25.3
+          },
+          {
+            "week": 2,
+            "weightKg": 71,
+            "bmi": 25.2
+          },
+          {
+            "week": 3,
+            "weightKg": 70.5,
+            "bmi": 25
+          },
+          {
+            "week": 4,
+            "weightKg": 70,
+            "bmi": 24.8
+          },
+          {
+            "week": 5,
+            "weightKg": 69.5,
+            "bmi": 24.6
+          },
+          {
+            "week": 6,
+            "weightKg": 69,
+            "bmi": 24.4
+          },
+          {
+            "week": 7,
+            "weightKg": 68.5,
+            "bmi": 24.3
+          },
+          {
+            "week": 8,
+            "weightKg": 68,
+            "bmi": 24.1
+          },
+          {
+            "week": 9,
+            "weightKg": 67.5,
+            "bmi": 23.9
+          },
+          {
+            "week": 10,
+            "weightKg": 67,
+            "bmi": 23.7
+          },
+          {
+            "week": 11,
+            "weightKg": 66.5,
+            "bmi": 23.6
+          },
+          {
+            "week": 12,
+            "weightKg": 66,
+            "bmi": 23.4
+          },
+          {
+            "week": 13,
+            "weightKg": 65.5,
+            "bmi": 23.2
+          },
+          {
+            "week": 14,
+            "weightKg": 65,
+            "bmi": 23
+          },
+          {
+            "week": 15,
+            "weightKg": 64.5,
+            "bmi": 22.9
+          },
+          {
+            "week": 16,
+            "weightKg": 64,
+            "bmi": 22.7
+          }
+        ],
+        "macroPlan": {
+          "proteinGrams": 108,
+          "fatGrams": 56,
+          "carbGrams": 217
+        },
+        "riskNotes": []
+      },
+      "subscription": {
+        "id": "sub_demo_paid",
+        "status": "active",
+        "provider": "mock",
+        "paidAt": "2026-07-01T14:52:52.415Z",
+        "expiresAt": null
+      },
+      "paymentEvents": [],
+      "completedAt": "2026-07-01T14:52:52.415Z"
+    },
+    {
+      "sessionId": "q_06438c00dacb4161",
+      "createdAt": "2026-07-01T14:54:19.893Z",
+      "updatedAt": "2026-07-01T14:54:28.419Z",
+      "version": 2,
+      "subscriptionStatus": "inactive",
+      "answers": {
+        "gender": {
+          "gender": "female"
+        },
+        "goals": {
+          "goals": [
+            "build_strength",
+            "increase_energy"
+          ]
+        }
+      },
+      "assessment": null,
+      "subscription": null,
+      "paymentEvents": []
+    }
+  ]
+}

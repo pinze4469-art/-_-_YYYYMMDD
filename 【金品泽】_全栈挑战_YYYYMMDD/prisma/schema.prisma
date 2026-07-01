@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum SubscriptionStatus {
+  inactive
+  active
+  expired
+}
+
+enum QuizStep {
+  gender
+  goals
+  body
+  activity
+}
+
+model UserSession {
+  id                 String             @id
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  currentVersion     Int                @default(0)
+  subscriptionStatus SubscriptionStatus @default(inactive)
+  answers            QuizAnswer[]
+  assessment         HealthAssessment?
+  subscription       Subscription?
+
+  @@index([subscriptionStatus])
+}
+
+model QuizAnswer {
+  id        String      @id @default(cuid())
+  sessionId String
+  step      QuizStep
+  payload   Json
+  version   Int
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+  session   UserSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, step])
+  @@index([sessionId, version])
+}
+
+model HealthAssessment {
+  id                   String      @id @default(cuid())
+  sessionId            String      @unique
+  bmi                  Decimal     @db.Decimal(5, 2)
+  bmiCategory          String
+  dailyCalories        Int
+  targetPredictionDate DateTime
+  predictionCurve      Json
+  macroPlan            Json
+  summary              String
+  createdAt            DateTime    @default(now())
+  session              UserSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}
+
+model Subscription {
+  id        String             @id @default(cuid())
+  sessionId String             @unique
+  status    SubscriptionStatus @default(inactive)
+  provider  String             @default("mock")
+  paidAt    DateTime?
+  expiresAt DateTime?
+  session   UserSession        @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  events    PaymentEvent[]
+}
+
+model PaymentEvent {
+  id             String       @id @default(cuid())
+  subscriptionId String
+  type           String
+  rawPayload     Json
+  createdAt      DateTime     @default(now())
+  subscription   Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+
+  @@index([subscriptionId, createdAt])
+}
